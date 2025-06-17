@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Suporte - Sistema de Feiras</title>
+  <link rel="stylesheet" href="css/estilo.css"> <!-- Corrigido para seu CSS -->
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>AstroFeiras</h2>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="relatorios.html">Relatórios</a>
+        <a href="suporte.html" class="active">Suporte</a>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <header>
+        <h1>Central de Suporte</h1>
+      </header>
+
+      <!-- Formulário de Suporte -->
+      <section class="form-evento">
+        <h2 style="margin-bottom: 25px;">Envie sua dúvida</h2>
+        <form id="formSuporte">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <!-- FAQ - Perguntas Frequentes -->
+      <section style="margin-top: 50px;">
+        <h2 style="margin-bottom: 15px;">Perguntas Frequentes</h2>
+        <ul class="event-list">
+          <li>
+            <span class="event-title">Como cadastro uma nova feira?</span>
+            <span class="event-date">01/01/2024</span>
+            <span class="event-status status-active">Ativo</span>
+          </li>
+          <li>
+            <span class="event-title">Posso editar uma feira já cadastrada?</span>
+            <span class="event-date">15/02/2024</span>
+            <span class="event-status status-completed">Respondido</span>
+          </li>
+          <li>
+            <span class="event-title">Como excluir uma feira cancelada?</span>
+            <span class="event-date">10/03/2024</span>
+            <span class="event-status status-cancelled">Cancelado</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
